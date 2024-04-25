@@ -36,7 +36,7 @@ if image:
     #converting the image to bytes
     img = Image.open(image)
     buf = io.BytesIO() #takes image file and gets bytes out of it 
-    img.save(buf,format = 'JPEG')
+    img.save(buf,format = 'PNG')
     byte_im = buf.getvalue()
 
     #converting bytes to b64encoding
