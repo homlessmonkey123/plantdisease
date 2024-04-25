@@ -15,7 +15,7 @@ PREDICTED_LABELS = {'Healthy': 'Plant is healthy!', 'Powdery':'Plant is a bit po
 
 def get_prediction(image_data): #expects parameter image data
   #replace your image classification ai service URL
-  url = ‘https://askai.aiclub.world/777b8e63-8692-45d2-b2b7-ae4425c60bdb’  
+  url = 'https://askai.aiclub.world/777b8e63-8692-45d2-b2b7-ae4425c60bdb'
   r = requests.post(url, data=image_data) #data sent to the URL, requests library use
   #rest-style endpoint - post the data & get response back 
   print(f"response={r.json()}") #response itself is an object;  if you want the details of response, do r.json (understandable)
